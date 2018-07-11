@@ -1,4 +1,4 @@
-import React, {PureComponent} from 'react';
+import React, {Component} from 'react';
 //components
 import Aux from '../../hoc/auxillary';
 import Burger from '../../components/Burger/Burger';
@@ -13,7 +13,7 @@ const INGREDIENT_PRICES = {
   bacon: 0.33
 }
 
-class BurgerBuilder extends PureComponent {
+class BurgerBuilder extends Component {
   state = {
     ingredients: {
       meat: 0,
@@ -79,7 +79,7 @@ class BurgerBuilder extends PureComponent {
             modalClosed={this.purchaseModeOffHandler}
             continuePurchase={this.purchaseContinuedHandler}
             ingredients={this.state.ingredients} />
-        </Modal>;
+        </Modal>
         <Burger ingredients={this.state.ingredients}/>
         <BuildControls
           ingredientAdded={this.addIngredientHandler}

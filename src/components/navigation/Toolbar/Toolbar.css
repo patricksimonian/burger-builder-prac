@@ -4,7 +4,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #703b09;
+  background-color: #003261;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,6 +17,12 @@
 }
 
 .Toolbar nav {
-
+  box-sizing: border-box;
+  height: 100%;
 }
 /*desktop styles*/
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
